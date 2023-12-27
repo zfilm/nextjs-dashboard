@@ -1,3 +1,3 @@
 export default function Page(){
-    return <p>Dashboard page</p>;
+    return <p>Dashboard on Vercel page</p>;
 }
