@@ -1,14 +1,13 @@
 "use client"
 import { useParams, useSearchParams } from "next/navigation";
 
-export default async function Page({ params }: { params: { test: string, id: number }}){
+export default async function Page({ params }: { params: { id: number, customer: string }}){
     const searchParams = useSearchParams();
-    const test = searchParams.get('test');
     const id = searchParams.get('id');
+    const customer = searchParams.get('customer');
     return <div>
                 <h2>Customers page</h2>
                 <p>{id}</p>
-                <p>{test}</p>
-
+                <p>{customer}</p>
             </div>;
 }
