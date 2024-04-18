@@ -31,7 +31,6 @@ export default async function InvoicesTable({
                         className="mr-2 rounded-full"
                         width={28}
                         height={28}
-                        alt={`${invoice.name}'s profile picture`} // Delete this line
                       />
                       <p>{invoice.name}</p>
                     </div>
